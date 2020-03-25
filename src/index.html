@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>Stencil Component Starter</title>
+  <style>
+    :root {
+      --menu-l1-color: gray;
+      --menu-l1-color-hover: black;
+    }
+    body {background-color: powderblue;}
+    </style>
+  <script type="module" src="/build/alx-menu.esm.js"></script>
+  <script nomodule src="/build/alx-menu.js"></script>
+</head>
+
+<body>
+
+
+  <h1>Menu</h1>
+  <div style="width:50%">
+    <alx-menu role="menubar" aria-label="Mythical University">
+      <alx-menu-item>
+        Link 1
+        <alx-menu slot="children">
+          <alx-menu-item url="link1.1.html">
+            Link 1.1
+          </alx-menu-item>
+          <alx-menu-item url="link1.2.html">
+            Link 1.2
+            <alx-menu slot="children">
+                <alx-menu-item url="link1.2.1">
+                    Link 1.2.1
+                </alx-menu-item>
+            </alx-menu>
+          </alx-menu-item>
+          <alx-menu-item url="link1.3.html">
+            Link 1.3
+          </alx-menu-item>
+          <alx-menu-item url="link1.3.html">
+            Link 1.4
+            <alx-menu slot="children">
+              <alx-menu-item url="link1.4.1">
+                  Link 1.4.1
+              </alx-menu-item>
+              <alx-menu-item url="link1.4.2">
+                Link 1.4.2
+            </alx-menu-item>
+          </alx-menu>
+          </alx-menu-item>
+        </alx-menu>
+      </alx-menu-item>
+      <alx-menu-item url="link2.html">
+        Link 2
+      </alx-menu-item>
+    </alx-menu>
+  
+  </div>
+  
+<br><br>
+
+  <a href="">Testing</a>
+  
+  
+</body>
+
+</html>
